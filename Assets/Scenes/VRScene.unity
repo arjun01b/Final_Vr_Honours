@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b700d3af54efed349be9fce2cf8fb5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  Compressions: 0
 --- !u!1 &653767619
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,7 +5015,6 @@ GameObject:
   - component: {fileID: 1147409418}
   - component: {fileID: 1147409420}
   - component: {fileID: 1147409419}
-  - component: {fileID: 1147409421}
   m_Layer: 0
   m_Name: LeftHandController
   m_TagString: Left Hand
@@ -5314,22 +5313,6 @@ MonoBehaviour:
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
   m_AllowHoverHapticsWhileSelecting: 1
---- !u!54 &1147409421
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147409416}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &1163475876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5975,6 +5958,7 @@ GameObject:
   - component: {fileID: 1542408832}
   - component: {fileID: 1542408834}
   - component: {fileID: 1542408833}
+  - component: {fileID: 1542408835}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6099,6 +6083,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542408831}
   m_CullTransparentMesh: 1
+--- !u!114 &1542408835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542408831}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76313ac7c247ad4193eefcb0e220bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ValueText: {fileID: 0}
 --- !u!1 &1582681999
 GameObject:
   m_ObjectHideFlags: 0

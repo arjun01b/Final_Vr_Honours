@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CompressionCheck : MonoBehaviour
 {
+   // public TextMeshPro ValueText;
+    public int Compressions;
 
-    public int score = 0;
 
-    private void OnTriggerExit()
+    void Start()
     {
+    //    ValueText.text = Compressions.ToString();
+    }
+    private void OnTriggerExit()//Collider other)
+    {
+       // ScoreCounter.scoreValue = ScoreCounter.scoreValue + 1;
+       //
+       //
+      // if (other.tag == "Left Hand" && other.tag == "Right Hand")
 
-        score = score+1;
+      // {
+            Compressions = Compressions + 1;
 
-        Debug.Log(score);
-        
+            Debug.Log(Compressions);
+      // }
     }
 }
