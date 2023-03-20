@@ -19,12 +19,12 @@ public class CompressionCheck : MonoBehaviour
        // ScoreCounter.scoreValue = ScoreCounter.scoreValue + 1;
        //
        //
-      // if (other.tag == "Left Hand" && other.tag == "Right Hand")
+       // if (other.tag == "Left Hand" && other.tag == "Right Hand")
 
-      // {
+       // {
             Compressions = Compressions + 1;
 
             Debug.Log(Compressions);
-      // }
+       // }
     }
 }
