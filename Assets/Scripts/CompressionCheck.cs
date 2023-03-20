@@ -8,11 +8,11 @@ public class CompressionCheck : MonoBehaviour
 {
    // public TextMeshPro ValueText;
     public int Compressions;
-
+    public TMP_Text CompText;
 
     void Start()
     {
-    //    ValueText.text = Compressions.ToString();
+        CompText.text = Compressions.ToString();
     }
     private void OnTriggerExit()//Collider other)
     {
