@@ -2866,6 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Compressions: 0
+  CompText: {fileID: 1542408833}
 --- !u!1 &653767619
 GameObject:
   m_ObjectHideFlags: 0
