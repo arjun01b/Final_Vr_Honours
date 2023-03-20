@@ -7,7 +7,7 @@ using TMPro;
 public class CompressionCheck : MonoBehaviour
 {
    // public TextMeshPro ValueText;
-    public int Compressions;
+    public float Compressions;
     public TMP_Text CompText;
 
     void Start()
