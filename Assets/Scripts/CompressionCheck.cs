@@ -14,9 +14,16 @@ public class CompressionCheck : MonoBehaviour
     public float BPM=0;
 
 
+    private float compressRate;
+
+    private float IntervalTime;
+
+
     void Update()
     {
         CompText.text = Compressions.ToString();
+
+       // IntervalTime=
     }
     private void OnTriggerExit(Collider other)
     {
@@ -28,7 +35,7 @@ public class CompressionCheck : MonoBehaviour
         {
             Compressions = Compressions + 1;
 
-            Debug.Log(Compressions);
+           // Debug.Log(Compressions);
         }
     }
 }
