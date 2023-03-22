@@ -237,7 +237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19682762}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fcaa87facf42d641b33ee48061156f1, type: 3}
   m_Name: 
@@ -690,7 +690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerCanvas: {fileID: 19682762}
-  CountdownText: {fileID: 1050427826}
 --- !u!65 &90436559
 BoxCollider:
   m_ObjectHideFlags: 0
