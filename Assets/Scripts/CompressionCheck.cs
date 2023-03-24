@@ -30,7 +30,7 @@ public class CompressionCheck : MonoBehaviour
        // ScoreCounter.scoreValue = ScoreCounter.scoreValue + 1;
        //
        //
-        if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
+        if (other.gameObject.tag == "Left Hand" && other.gameObject.tag == "Right Hand")
 
         {
             Compressions = Compressions + 1;

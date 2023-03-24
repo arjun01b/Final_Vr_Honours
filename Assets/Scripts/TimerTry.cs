@@ -22,6 +22,15 @@ public class TimerTry : MonoBehaviour
 
     }
 
+    //void ond 
+    //{
+    //    CurrentTime = StartingTime;
+    //}
+    private void OnDisable()
+    {
+        CurrentTime = StartingTime;
+    }
+
     private void Update()
     {
         CurrentTime -= 1 * Time.deltaTime;
@@ -44,13 +53,13 @@ public class TimerTry : MonoBehaviour
        
     }
 
-    //void ResetTimer()
-    //{
-    //    if(!BreathCheckCanvas.activeInHierarchy)
-    //    {
+    void ResetTimer()
+    {
+        if(!BreathCheckCanvas.activeInHierarchy)
+        {
 
-    //        //CurrentTime = StartingTime;
-    //        Debug.Log("Gameobject is inactive");
-    //    }
-    //}
+            CurrentTime = StartingTime;
+            Debug.Log("Gameobject is inactive");
+        }
+    }
 }
