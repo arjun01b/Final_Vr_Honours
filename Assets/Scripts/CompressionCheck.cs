@@ -19,7 +19,7 @@ public class CompressionCheck : MonoBehaviour
 
     float timer = 0;
 
-    public float BPM=0;
+   // public float BPM=0;
 
 
     private float compressRate;
