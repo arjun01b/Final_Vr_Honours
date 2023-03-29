@@ -16,15 +16,18 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text BeatText;
 
+    public GameObject BPMChecker;
+
+
 
     float timer = 0;
 
    // public float BPM=0;
 
 
-    private float compressRate;
+   // private float compressRate;
 
-    private float IntervalTime;
+   // private float IntervalTime;
 
 
     void Update()
@@ -35,7 +38,9 @@ public class CompressionCheck : MonoBehaviour
 
         timer += Time.deltaTime;
 
-       // IntervalTime=
+        
+
+        // IntervalTime=
     }
     private void OnTriggerExit(Collider other)
     {
@@ -72,5 +77,14 @@ public class CompressionCheck : MonoBehaviour
                 
            // Debug.Log(Compressions);
         }
+
+        if (Compressions == 30)
+        {
+
+            Debug.Log("Condition working");
+
+        }
+
+
     }
 }

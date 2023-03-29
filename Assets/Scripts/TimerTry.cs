@@ -8,9 +8,13 @@ public class TimerTry : MonoBehaviour
 {
     public TMP_Text CountdownText;
 
+    public GameObject BreathCheckGameObject;
 
     public GameObject BreathCheckCanvas;
-    
+
+    public GameObject BreathTickMark;
+
+    public GameObject CPRGameObject;
 
     float CurrentTime = 0f;
     float StartingTime = 10f;
@@ -22,10 +26,7 @@ public class TimerTry : MonoBehaviour
 
     }
 
-    //void ond 
-    //{
-    //    CurrentTime = StartingTime;
-    //}
+ 
     private void OnDisable()
     {
         CurrentTime = StartingTime;
@@ -39,27 +40,17 @@ public class TimerTry : MonoBehaviour
         if(CurrentTime<=0)
         {
             CurrentTime = 0;
+            Object.Destroy(BreathCheckGameObject, 0);
+            BreathTickMark.SetActive(true);
+            CPRGameObject.SetActive(true);
+
         }
 
 
-        if (!BreathCheckCanvas.activeInHierarchy)
-        {
-
-
-            //CurrentTime = StartingTime;
-            Debug.Log("Gameobject is inactive");
-        }
+       
 
        
     }
 
-    void ResetTimer()
-    {
-        if(!BreathCheckCanvas.activeInHierarchy)
-        {
-
-            CurrentTime = StartingTime;
-            Debug.Log("Gameobject is inactive");
-        }
-    }
+    
 }
