@@ -19,6 +19,8 @@ public class CompressionCheck : MonoBehaviour
     public GameObject BPMChecker;
 
 
+    public Image SquareImage;
+
 
     float timer = 0;
 
@@ -60,6 +62,12 @@ public class CompressionCheck : MonoBehaviour
             
             if(GetTime<0.6f)
             {
+
+                SquareImage.enabled = true;
+
+                SquareImage.gameObject.SetActive(true);
+
+
                 Debug.Log("Very fast");
             }
 
