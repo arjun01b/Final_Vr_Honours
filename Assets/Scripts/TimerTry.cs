@@ -42,7 +42,14 @@ public class TimerTry : MonoBehaviour
             CurrentTime = 0;
             Object.Destroy(BreathCheckGameObject, 0);
             BreathTickMark.SetActive(true);
-            CPRGameObject.SetActive(true);
+
+           // private IEnumerator Timer(float duration)
+          //  {
+                CPRGameObject.SetActive(true);
+
+              //  yield return new WaitForSeconds()
+
+           // }
 
         }
 

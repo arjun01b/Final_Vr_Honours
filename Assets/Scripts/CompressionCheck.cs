@@ -63,7 +63,7 @@ public class CompressionCheck : MonoBehaviour
             if(GetTime<0.6f)
             {
 
-                //SquareImage.enabled = true;
+               //SquareImage.enabled = true;
 
                 SquareImage.gameObject.SetActive(true);
 
