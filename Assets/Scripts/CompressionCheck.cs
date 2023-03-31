@@ -16,7 +16,7 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text BeatText;
 
-    public GameObject BPMChecker;
+   // public GameObject BPMChecker;
 
 
     public Image SquareImage;
