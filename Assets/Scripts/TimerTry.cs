@@ -32,6 +32,11 @@ public class TimerTry : MonoBehaviour
         CurrentTime = StartingTime;
     }
 
+    void TurnBPMObjectActive()
+    {
+        CPRGameObject.SetActive(true);
+    }
+
     private void Update()
     {
         CurrentTime -= 1 * Time.deltaTime;
@@ -42,10 +47,13 @@ public class TimerTry : MonoBehaviour
             CurrentTime = 0;
             Object.Destroy(BreathCheckGameObject, 0);
             BreathTickMark.SetActive(true);
+            Invoke("TurnBPMObjectActive", 1.5f);
+
+
 
            // private IEnumerator Timer(float duration)
           //  {
-                CPRGameObject.SetActive(true);
+               // CPRGameObject.SetActive(true);
 
               //  yield return new WaitForSeconds()
 
