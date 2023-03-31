@@ -59,8 +59,8 @@ public class CompressionCheck : MonoBehaviour
 
              timer = 0;
 
-            
             if(GetTime<0.6f)
+            
             {
 
                //SquareImage.enabled = true;
