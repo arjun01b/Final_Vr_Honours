@@ -16,7 +16,7 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text BeatText;
 
-   // public GameObject BPMChecker;
+    public GameObject BPMChecker;
 
 
     public Image SquareImage;
@@ -24,13 +24,18 @@ public class CompressionCheck : MonoBehaviour
 
     float timer = 0;
 
-   // public float BPM=0;
+    // public float BPM=0;
 
 
-   // private float compressRate;
+    // private float compressRate;
 
-   // private float IntervalTime;
+    // private float IntervalTime;
 
+
+    void Start()
+    {
+        
+    }
 
     void Update()
     {
@@ -71,7 +76,7 @@ public class CompressionCheck : MonoBehaviour
                 Debug.Log("Very fast");
             }
 
-            if(GetTime >= 0.6f && GetTime <= 1)
+            if(GetTime >= 0.55f && GetTime <= 1)
             {
                 Debug.Log("Optimal");
             }
@@ -80,18 +85,18 @@ public class CompressionCheck : MonoBehaviour
             {
                 Debug.Log("Too slow");
             }
-                    
-            
-                
-           // Debug.Log(Compressions);
+
+            if (Compressions == 30)
+            {
+                Object.Destroy(BPMChecker, 1.0f);
+                Debug.Log("Condition working");
+
+            }
+
+            // Debug.Log(Compressions);
         }
 
-        if (Compressions == 30)
-        {
-
-            Debug.Log("Condition working");
-
-        }
+        
 
 
     }
