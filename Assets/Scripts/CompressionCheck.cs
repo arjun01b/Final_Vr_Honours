@@ -14,13 +14,18 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text CompText;
 
-    public TMP_Text BeatText;
+   
 
     public GameObject BPMChecker;
 
 
-    public Image SquareImage;
 
+
+
+    public GameObject EvalText;
+  
+
+    public GameObject testImage;
 
     float timer = 0;
 
@@ -41,7 +46,7 @@ public class CompressionCheck : MonoBehaviour
     {
         CompText.text = Compressions.ToString();
 
-        BeatText.text = GetTime.ToString();
+       // BeatText.text = GetTime.ToString();
 
         timer += Time.deltaTime;
 
@@ -57,32 +62,40 @@ public class CompressionCheck : MonoBehaviour
         if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
 
         {
+            
             Compressions = Compressions + 1;
 
+            GetTime = timer;
 
-             GetTime = timer;
+            timer = 0;
 
-             timer = 0;
+            testImage.SetActive(true);
 
-            if(GetTime<0.6f)
+            if (GetTime<0.6f)
             
             {
-
-               //SquareImage.enabled = true;
-
-                SquareImage.gameObject.SetActive(true);
-
+                
+                testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
+                EvalText.GetComponent<TextMeshProUGUI>().text = "Too quick";
 
                 Debug.Log("Very fast");
             }
 
             if(GetTime >= 0.55f && GetTime <= 1)
             {
+                
+                testImage.GetComponent<Image>().color = new Color32(0, 255, 15, 255);
+                EvalText.GetComponent<TextMeshProUGUI>().text = "Optimal";
                 Debug.Log("Optimal");
             }
 
             if(GetTime>1)
             {
+
+                
+
+                testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
+                EvalText.GetComponent<TextMeshProUGUI>().text = "Too slow";
                 Debug.Log("Too slow");
             }
 
