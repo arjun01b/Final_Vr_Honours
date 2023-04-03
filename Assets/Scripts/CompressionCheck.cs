@@ -18,7 +18,7 @@ public class CompressionCheck : MonoBehaviour
 
     public GameObject BPMChecker;
 
-
+    public GameObject CheckMarkBPM;
 
 
 
@@ -102,6 +102,8 @@ public class CompressionCheck : MonoBehaviour
             if (Compressions == 30)
             {
                 Object.Destroy(BPMChecker, 1.0f);
+                BPMChecker.GetComponent<BoxCollider>().enabled = false;
+                CheckMarkBPM.SetActive(true);
                 Debug.Log("Condition working");
 
             }
