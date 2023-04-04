@@ -14,8 +14,8 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text CompText;
 
-    //public GameObject RescueBreath1;
-    //public GameObject RescueBreath2;
+    public GameObject RescueBreathCanvas;
+   // public GameObject RescueBreath2;
    
 
     public GameObject BPMChecker;
@@ -31,7 +31,7 @@ public class CompressionCheck : MonoBehaviour
 
     float timer = 0;
 
-  
+      
 
 
     void Start()
@@ -118,16 +118,16 @@ public class CompressionCheck : MonoBehaviour
                 CheckMarkBPM.SetActive(true);
                 Debug.Log("Condition working");
 
-                //RescueBreath1.SetActive(true);
-                //RescueBreath2.SetActive(true);
+                
+              
 
             }
-
-            // Debug.Log(Compressions);
+                  
         }
+    }
 
-        
-
-
+    void OnDestroy()
+    {
+        RescueBreathCanvas.SetActive(true);
     }
 }

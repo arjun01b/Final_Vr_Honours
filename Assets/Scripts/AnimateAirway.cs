@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class AnimateAirway : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] private Animator MyAnimationController;
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Left Hand"))
+        {
+            MyAnimationController.SetBool("playHeadTilt", true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("Left Hand"))
+        {
+            MyAnimationController.SetBool("playHeadTilt", false);
+        }
     }
 }
