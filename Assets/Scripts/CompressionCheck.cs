@@ -14,6 +14,8 @@ public class CompressionCheck : MonoBehaviour
 
     public TMP_Text CompText;
 
+    //public GameObject RescueBreath1;
+    //public GameObject RescueBreath2;
    
 
     public GameObject BPMChecker;
@@ -115,6 +117,9 @@ public class CompressionCheck : MonoBehaviour
                 BPMChecker.GetComponent<BoxCollider>().enabled = false;
                 CheckMarkBPM.SetActive(true);
                 Debug.Log("Condition working");
+
+                //RescueBreath1.SetActive(true);
+                //RescueBreath2.SetActive(true);
 
             }
 
