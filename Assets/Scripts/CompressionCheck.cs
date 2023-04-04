@@ -29,12 +29,7 @@ public class CompressionCheck : MonoBehaviour
 
     float timer = 0;
 
-    // public float BPM=0;
-
-
-    // private float compressRate;
-
-    // private float IntervalTime;
+  
 
 
     void Start()
@@ -81,7 +76,12 @@ public class CompressionCheck : MonoBehaviour
                 Debug.Log("Very fast");
             }
 
-            if(GetTime >= 0.55f && GetTime <= 1)
+            //if(GetTime)
+            //{
+
+            //}
+
+            if(GetTime >= 0.6f && GetTime <= 1)
             {
                 
                 testImage.GetComponent<Image>().color = new Color32(0, 255, 15, 255);
@@ -89,10 +89,15 @@ public class CompressionCheck : MonoBehaviour
                 Debug.Log("Optimal");
             }
 
+            //if(GetTime)
+            //{
+
+            //}
+
             if(GetTime>1)
             {
 
-                
+  
 
                 testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Too slow";
