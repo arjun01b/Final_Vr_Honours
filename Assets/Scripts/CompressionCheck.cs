@@ -12,6 +12,8 @@ public class CompressionCheck : MonoBehaviour
 
     public float GetTime;
 
+    public float goodCompressions = 0;
+
     public TMP_Text CompText;
 
     public GameObject RescueBreathCanvas;
@@ -28,6 +30,10 @@ public class CompressionCheck : MonoBehaviour
   
 
     public GameObject testImage;
+
+    public GameObject QuestMarker;
+
+    public GameObject RescueBreathMarker;
 
     float timer = 0;
 
@@ -68,55 +74,60 @@ public class CompressionCheck : MonoBehaviour
 
             testImage.SetActive(true);
 
-            if (GetTime<=0.2f)
+            if (GetTime<=0.2f) //Red too quick
             
             {
                 
                 testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Too quick";
 
-                Debug.Log("Very fast");
+                //Debug.Log("Very fast");
             }
 
-            if(GetTime >= 0.3 && GetTime <= 0.4)
+            if(GetTime >= 0.3 && GetTime <= 0.4) // Yellow Decrease 
             {
               testImage.GetComponent<Image>().color = new Color32(255,186,0,255);
               EvalText.GetComponent<TextMeshProUGUI>().text = "Decrease Speed";
-              Debug.Log("Increase speed");
+              //Debug.Log("Decrease speed");
 
             }
 
-            if (GetTime >= 0.5f && GetTime <= 0.6f)
+            if (GetTime >= 0.5f && GetTime <= 0.6f) // Green Optimal
             {
                 
                 testImage.GetComponent<Image>().color = new Color32(0, 255, 15, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Optimal";
-                Debug.Log("Optimal");
+                goodCompressions++;
+                Debug.Log(goodCompressions);
+               // Debug.Log("Optimal");
             }
 
-            if(GetTime>=0.7 && GetTime<=0.8)
+            if(GetTime>=0.7 && GetTime<=0.8) // Yellow Increase
             {
 
               testImage.GetComponent<Image>().color = new Color32(255,186,0,255);
               EvalText.GetComponent<TextMeshProUGUI>().text = "Increase Speed";
-              Debug.Log("Increase speed");
+             // Debug.Log("Increase speed");
 
             }
 
-            if (GetTime>=0.9)
+            if (GetTime>=0.9) // Red Too slow
             {
 
                 testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Too slow";
-                Debug.Log("Too slow");
+               // Debug.Log("Too slow");
             }
 
             if (Compressions == 30)
             {
                 Object.Destroy(BPMChecker, 1.0f);
                 BPMChecker.GetComponent<BoxCollider>().enabled = false;
+
+                QuestMarker.SetActive(false);
                 CheckMarkBPM.SetActive(true);
-                Debug.Log("Condition working");
+                
+               // Debug.Log("Condition working");
 
                 
               
@@ -128,6 +139,8 @@ public class CompressionCheck : MonoBehaviour
 
     void OnDestroy()
     {
+
+        RescueBreathMarker.SetActive(true);
         RescueBreathCanvas.SetActive(true);
     }
 }
