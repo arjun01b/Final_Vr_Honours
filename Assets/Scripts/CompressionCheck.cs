@@ -39,7 +39,7 @@ public class CompressionCheck : MonoBehaviour
 
     private Image imageComp;
 
-    public AudioSource BPMClip;
+   // public AudioSource BPMClip;
 
     
 
@@ -68,7 +68,7 @@ public class CompressionCheck : MonoBehaviour
 
         {
 
-            BPMClip.Play();
+            //BPMClip.Play();
             
             
             Compressions = Compressions + 1;
