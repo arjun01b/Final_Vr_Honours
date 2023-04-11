@@ -39,7 +39,7 @@ public class CompressionCheck : MonoBehaviour
 
     private Image imageComp;
 
-      
+    
 
 
     void Start()
@@ -97,7 +97,7 @@ public class CompressionCheck : MonoBehaviour
             if (GetTime >= 0.5f && GetTime <= 0.6f) // Green Optimal
             {
                 
-                testImage.GetComponent<Image>().color = new Color32(0, 255, 15, 255);
+               imageComp.color = new Color32(0, 255, 15, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Optimal";
                 goodCompressions++;
                 Debug.Log(goodCompressions);
@@ -107,7 +107,7 @@ public class CompressionCheck : MonoBehaviour
             if(GetTime>=0.7 && GetTime<=0.8) // Yellow Increase
             {
 
-              testImage.GetComponent<Image>().color = new Color32(255,186,0,255);
+              imageComp.color = new Color32(255,186,0,255);
               EvalText.GetComponent<TextMeshProUGUI>().text = "Increase Speed";
              // Debug.Log("Increase speed");
 
@@ -116,7 +116,7 @@ public class CompressionCheck : MonoBehaviour
             if (GetTime>=0.9) // Red Too slow
             {
 
-                testImage.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
+                imageComp.color = new Color32(255, 0, 0, 255);
                 EvalText.GetComponent<TextMeshProUGUI>().text = "Too slow";
                // Debug.Log("Too slow");
             }
