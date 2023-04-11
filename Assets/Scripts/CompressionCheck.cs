@@ -39,6 +39,8 @@ public class CompressionCheck : MonoBehaviour
 
     private Image imageComp;
 
+    public AudioSource BPMClip;
+
     
 
 
@@ -61,12 +63,13 @@ public class CompressionCheck : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-       // ScoreCounter.scoreValue = ScoreCounter.scoreValue + 1;
-       //
-       //
+      
         if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
 
         {
+
+            BPMClip.Play();
+            
             
             Compressions = Compressions + 1;
 
