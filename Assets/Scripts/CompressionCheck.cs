@@ -39,7 +39,8 @@ public class CompressionCheck : MonoBehaviour
 
     private Image imageComp;
 
-   // public AudioSource BPMClip;
+    public AudioSource BPMClip;
+    //public AudioClip beat;
 
     
 
@@ -63,12 +64,14 @@ public class CompressionCheck : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-      
+
+        BPMClip.Play(); 
+
         if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
 
         {
 
-            //BPMClip.Play();
+           
             
             
             Compressions = Compressions + 1;
@@ -131,6 +134,8 @@ public class CompressionCheck : MonoBehaviour
 
                 QuestMarker.SetActive(false);
                 CheckMarkBPM.SetActive(true);
+
+                BPMClip.Stop();
                 
                // Debug.Log("Condition working");
 
