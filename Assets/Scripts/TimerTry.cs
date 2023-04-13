@@ -20,6 +20,8 @@ public class TimerTry : MonoBehaviour
 
     public GameObject QuestArrowCPR;
 
+    public GameObject cubeBeat;
+
     float CurrentTime = 0f;
     float StartingTime = 10f;
 
@@ -49,6 +51,7 @@ public class TimerTry : MonoBehaviour
             Object.Destroy(BreathCheckGameObject, 0);
 
 
+            cubeBeat.SetActive(true);
 
             QuestArrowCPR.SetActive(true);
 
