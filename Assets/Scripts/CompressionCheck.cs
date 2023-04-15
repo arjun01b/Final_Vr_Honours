@@ -39,6 +39,8 @@ public class CompressionCheck : MonoBehaviour
 
     private Image imageComp;
 
+    [SerializeField] private Animator AnimController;
+
     //AudioSource BPMClip;
 
     //public AudioClip beat;
@@ -47,7 +49,7 @@ public class CompressionCheck : MonoBehaviour
 
     //public float volume;
 
-    
+
 
 
     void Start()
@@ -68,12 +70,24 @@ public class CompressionCheck : MonoBehaviour
 
         // IntervalTime=
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+
+
+    //    if (other.gameObject.tag == "Right Hand")
+    //    {
+    //        AnimController.SetBool("playHeadTilt", false);
+    //    }
+
+
+    //}
     private void OnTriggerExit(Collider other)
     {
 
 
-        
-        
+       // AnimController.SetBool("playHeadTilt", true);
+
 
         if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
 
@@ -85,6 +99,7 @@ public class CompressionCheck : MonoBehaviour
             //    alreadyPlayed = true;
             //}
 
+            
 
 
 

@@ -12,9 +12,12 @@ public class PlayAudio : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        BPMClip.Play();
-        cube.GetComponent<BoxCollider>().enabled = false;
 
+        if (other.gameObject.tag == "Right Hand")
+        {
+            BPMClip.Play();
+            cube.GetComponent<BoxCollider>().enabled = false;
+        }
        
         
     }

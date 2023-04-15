@@ -10,16 +10,22 @@ public class BreathCheckScript : MonoBehaviour
     public GameObject TimerCanvas;
 
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-
-        TimerCanvas.SetActive(true);
-        
+        if (other.gameObject.tag == "MainCamera")
+        {
+            TimerCanvas.SetActive(true);
+        }
     }
 
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
-        TimerCanvas.SetActive(false);
+
+        if (other.gameObject.tag == "MainCamera")
+        {
+            TimerCanvas.SetActive(false);
+
+        }
 
     }
 }
