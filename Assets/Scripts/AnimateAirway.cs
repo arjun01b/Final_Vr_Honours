@@ -10,6 +10,7 @@ public class AnimateAirway : MonoBehaviour
     public GameObject BreathCheckBox;
     public GameObject PointerArrowBreathCheck;
     public GameObject IndicatorHand;
+    public GameObject HumanHead; 
 
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +30,7 @@ public class AnimateAirway : MonoBehaviour
             IndicatorHand.SetActive(false);
             PointerArrowBreathCheck.SetActive(true);
             BreathCheckBox.SetActive(true);
+            HumanHead.SetActive(true);
             Debug.Log("Collision false");
         }
     }

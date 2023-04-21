@@ -22,6 +22,8 @@ public class TimerTry : MonoBehaviour
 
     public GameObject cubeBeat;
 
+    public GameObject HumanHead;
+
     float CurrentTime = 0f;
     float StartingTime = 10f;
 
@@ -61,6 +63,7 @@ public class TimerTry : MonoBehaviour
 
             CPRGameObject.SetActive(true);
 
+            HumanHead.SetActive(false);
 
 
              
