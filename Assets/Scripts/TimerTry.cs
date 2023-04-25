@@ -24,6 +24,10 @@ public class TimerTry : MonoBehaviour
 
     public GameObject HumanHead;
 
+    public GameObject HandGesture;
+
+    public GameObject CubeGesture;
+
     float CurrentTime = 0f;
     float StartingTime = 10f;
 
@@ -52,6 +56,7 @@ public class TimerTry : MonoBehaviour
             CurrentTime = 0;
             Object.Destroy(BreathCheckGameObject, 0);
 
+            CubeGesture.SetActive(true);
 
             cubeBeat.SetActive(true);
 
@@ -65,7 +70,7 @@ public class TimerTry : MonoBehaviour
 
             HumanHead.SetActive(false);
 
-
+            HandGesture.SetActive(true);
              
 
         }
