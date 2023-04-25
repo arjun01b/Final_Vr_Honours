@@ -302,7 +302,7 @@ MonoBehaviour:
   cubeBeat: {fileID: 1369811018}
   HumanHead: {fileID: 656186399}
   HandGesture: {fileID: 213119906}
-  CubeGesture: {fileID: 0}
+  CubeGesture: {fileID: 49389872}
 --- !u!1 &22401332
 GameObject:
   m_ObjectHideFlags: 0
