@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.TerrainTools;
+//using UnityEditor.TerrainTools;
 
 public class CompressionCheck : MonoBehaviour
 {
