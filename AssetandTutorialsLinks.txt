@@ -5,11 +5,17 @@ https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple
 https://assetstore.unity.com/packages/2d/textures-materials/sky/free-stylized-skybox-212257
 https://assetstore.unity.com/packages/2d/textures-materials/floors/five-seamless-tileable-ground-textures-57060
 
+https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.3/manual/index.html
+
 
 https://freesound.org/people/carroll27/sounds/151920/
 https://freesound.org/people/digifishmusic/sounds/49109/
 https://www.cgtrader.com/free-3d-models/various/various-models/3d-pointer-arrows
 https://stock.adobe.com/uk/search?k=aed+icon&asset_id=261652014
+https://www.mixamo.com/#/?page=2&type=Character
+https://www.mixamo.com/#/?page=1&query=head+nod&type=Motion%2CMotionPack
+
+
 
 
 Tutorials
