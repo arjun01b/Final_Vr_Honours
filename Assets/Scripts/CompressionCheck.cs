@@ -35,6 +35,8 @@ public class CompressionCheck : MonoBehaviour
 
     public GameObject RescueBreathMarker;
 
+    public GameObject DisableCheckmark;
+
     float timer = 0;
 
     private Image imageComp;
@@ -71,22 +73,23 @@ public class CompressionCheck : MonoBehaviour
         // IntervalTime=
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-
-    //    if (other.gameObject.tag == "Right Hand")
-    //    {
-    //        AnimController.SetBool("playHeadTilt", false);
-    //    }
-
-
-    //}
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
 
-       // AnimController.SetBool("playHeadTilt", true);
+        if (other.gameObject.tag == "Right Hand")
+        {
+            DisableCheckmark.SetActive(false);
+        }
+
+
+    }
+    private void OnTriggerExit(Collider other)
+
+        { 
+
+
+            AnimController.SetBool("playHeadTilt", true);
 
 
         if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
