@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ActivateGrabRay">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABCAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ActivateGrabRay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActivateTelportationRay">
+    <Position X="4.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ActivateTelportationRay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimateAirway">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAACAAAAAAAAAAAAAAIAQQAAAAAAAAQk=</HashCode>
+      <FileName>Assets\Scripts\AnimateAirway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArrowMove">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAABCBCAAAAAQAAAAAAAAAAAAAAAAAAAAAAACQAA=</HashCode>
+      <FileName>Assets\Scripts\ArrowMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreathCheckScript">
+    <Position X="11.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\BreathCheckScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompressionCheck">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASQBIAAAACAIAAAAACCAABIEghAAAIAAQQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CompressionCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandAnimationInput">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\HandAnimationInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimerTry">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACAAQAACBQAAAAEAgQAAAAAYgAAAgAABACA=</HashCode>
+      <FileName>Assets\Scripts\TimerTry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

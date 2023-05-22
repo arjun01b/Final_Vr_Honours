@@ -92,19 +92,9 @@ public class CompressionCheck : MonoBehaviour
             AnimController.SetBool("playHeadTilt", true);
 
 
-        if (/*other.gameObject.tag == "Left Hand" &&*/ other.gameObject.tag == "Right Hand")
+        if (other.gameObject.tag == "Right Hand")
 
         {
-
-            //if (!alreadyPlayed)
-            //{
-            //    BPMClip.PlayOneShot(beat, volume);
-            //    alreadyPlayed = true;
-            //}
-
-            
-
-
 
             Compressions = Compressions + 1;
 
